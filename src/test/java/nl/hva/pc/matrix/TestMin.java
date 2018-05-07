@@ -14,6 +14,9 @@ public class TestMin {
 
         int min = FindMinimum.findMinimum(data);
 
+        /* TODO 06: Find the magic number (actually the hashcode of the stringified version of the calculated matrix)
+           To pass the test you must inform the right number, it is not -1 :-) */
+
         assertEquals(min,7692896);
     }
 }
