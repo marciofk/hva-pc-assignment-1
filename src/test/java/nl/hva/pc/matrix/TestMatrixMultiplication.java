@@ -22,6 +22,6 @@ public class TestMatrixMultiplication {
         /* TODO 06: Find the magic number (actually the hashcode of the stringified version of the calculated matrix)
            To pass the test you must inform the right number, it is not -1 :-) */
 
-        assertEquals(Arrays.deepToString(c).hashCode(),1514016271);
+        assertEquals(Arrays.deepToString(c).hashCode(),-1);
     }
 }

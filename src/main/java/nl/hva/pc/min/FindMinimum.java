@@ -54,33 +54,12 @@ class MinimumRunner extends Thread {
                 // one for the left-hand side part of the array
                 // another for the right-hand side part of the array
 
-                // left-hand-side slice
-                int f1 = from;
-                int t1 = to / 2 < f1 ? f1 : to / 2;
-                MinimumRunner r1 = new MinimumRunner(data, f1, t1);
-                r1.start();
-
-                // left-hand-side slice
-                int f2 = t1 + 1;
-                int t2 = to;
-                MinimumRunner r2 = new MinimumRunner(data, f2, t2);
-                r2.start();
-
                 // TODO 08: Wait for each thread
-
-                r1.join();
-                r2.join();
 
                 // TODO 09: Get the minimum of both results
 
-                if (r1.min < r2.min) {
-                    min = r1.min;
-                } else {
-                    min = r2.min;
-                }
-
             }
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
 

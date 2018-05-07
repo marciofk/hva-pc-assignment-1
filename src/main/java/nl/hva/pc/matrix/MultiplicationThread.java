@@ -32,12 +32,6 @@ public class MultiplicationThread extends Thread {
 
 		// TODO 05: calculate the value of c[row][col]
 
-		int sum = 0;
-		for(int i = 0; i< a[0].length; i++){
-			sum += a[row][i] * b[i][col];
-		}
-		c[row][col] = sum;
-		
 	}
 
 }
